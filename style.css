@@ -1,11 +1,9 @@
 *{padding: 0;
 margin: 0;
-font-family: 'Times New Roman', Times, serif;
-}
+font-family: 'Times New Roman', Times, serif;}
 
-body{background-image: url(Image\ 2.jpg);
-background-size: cover;
-background-repeat: no-repeat;}
+body{background-color: rgba(0, 0, 0, 0.623);
+color: aliceblue;}
 
 header{/*border: 1px solid #000000;*/
 padding: 10px;
@@ -17,7 +15,7 @@ margin-left: 900px;}
 
 
 header ul a{text-decoration: none;
-color: #000000;
+color: aliceblue;
 padding: 20px;}
 
 a:hover{background-color: rgb(169, 197, 141);
@@ -33,9 +31,10 @@ padding: 20px;
 margin: 30px;
 }
 
-.text h1{font-size: 90px;}
+.text h1{font-size: 120px;}
 
-.text h2{padding: 10px;}
+.text h2{padding: 10px;
+font-size: 50px;}
 
 .text p{padding: 10px;}
 
@@ -45,5 +44,11 @@ width: 600px;
 padding: 10px;
 margin: 10px;
 border-radius: 300px;}
+
+.weather{padding: 30px;
+font-size: 20px;
+border: 1px solid #000000;
+height: 100px;
+width: 200px;}
 
 

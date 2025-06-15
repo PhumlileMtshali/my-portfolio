@@ -11,10 +11,10 @@
         <div>
         <ul>
             <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/my-portfolio/index.html">Home</a></li>
-            <li><a href="file:///C:/Users/phuml/Desktop/Portfolio-project/about-me.html">About Me</a></li>
-            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/skills.html">Skills</a></li>
-            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/education.html">Education</a></li>
-            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/contacts.html">Contacts</a></li>
+            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/my-portfolio/about-me.html">About Me</a></li>
+            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/my-portfolio/skills.html">Skills</a></li>
+            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/my-portfolio/education.html">Education</a></li>
+            <li><a href="file:///C:/Users/phuml/Desktop/PortfolioProject/my-portfolio/contacts.html">Contacts</a></li>
         </ul>
        </div>
     </header>
@@ -24,9 +24,12 @@
         </div>
         <div class="text">
             <h1>MY PORTFOLIO</h1>
-            <h2>Phumlile Mtshali</h2><br>
-            <p>Welcome to My Tech World</p>
-            
+            <h2>Phumlile Mtshali👩‍💻</h2><br>
+        <div class="weather">🌄Whole Week Weather Forecast</div>
+        <script>
+        navigator.geolocation.getCurrentPosition(p=>fetch(`https://api.open-meteo.com/v1/forecast?latitude=${p.coords.latitude}&longitude=${p.coords.longitude}&daily=temperature_2m_min,temperature_2m_max&timezone=auto`).then(r=>r.json()).then(d=>document.getElementById('forecast').innerHTML=d.daily.time.map((t,i)=>`${t}: ${d.daily.temperature_2m_min[i]}–${d.daily.temperature_2m_max[i]}°C`).join('<br>')));
+        </script>
+
         </div>
     </div>
 </body>
