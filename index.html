@@ -19,12 +19,12 @@
        </div>
     </header>
     <div class="container">
-        <div>
+        <div class="picture">
             <img src="Image.jpg" alt="My Image">
         </div>
         <div class="text">
             <h1>MY PORTFOLIO</h1>
-            <h2>Phumlile Mtshali👩‍💻</h2><br>
+            <h2>Phumlile Mtshali👩‍💻</h2>
         <div class="weather">🌄Whole Week Weather Forecast</div>
         <script>
         navigator.geolocation.getCurrentPosition(p=>fetch(`https://api.open-meteo.com/v1/forecast?latitude=${p.coords.latitude}&longitude=${p.coords.longitude}&daily=temperature_2m_min,temperature_2m_max&timezone=auto`).then(r=>r.json()).then(d=>document.getElementById('forecast').innerHTML=d.daily.time.map((t,i)=>`${t}: ${d.daily.temperature_2m_min[i]}–${d.daily.temperature_2m_max[i]}°C`).join('<br>')));

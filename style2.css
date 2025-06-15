@@ -2,7 +2,6 @@
 margin: 0;}
 
 body{background-color: rgba(0, 0, 0, 0.623);
-color: aliceblue;
 /*border: 1px solid #000000;*/
 padding: 10px;
 margin: 10px;}
@@ -11,4 +10,4 @@ ul{/*border: 1px solid #000000;*/
 padding: 25px;}
 
 ul a{text-decoration: none;
-color: aliceblue;}
+color: black;}
