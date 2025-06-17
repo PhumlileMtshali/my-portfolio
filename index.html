@@ -30,9 +30,10 @@
         <script>navigator.geolocation.getCurrentPosition(async p=>{const{latitude:lat,longitude:lon}=p.coords,l=await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`).then(r=>r.json()),c=l.address.city||l.address.town||l.address.village||l.address.county||"",s=l.address.suburb||l.address.neighbourhood||"",w=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=temperature_2m_min,temperature_2m_max&timezone=auto`).then(r=>r.json()),d=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];document.getElementById("forecast").innerHTML=`<strong>7‑day forecast for ${s?`${s}, `:""}${c}</strong><br>`+w.daily.time.map((t,i)=>`${d[new Date(t).getDay()]}: ${w.daily.temperature_2m_min[i]}–${w.daily.temperature_2m_max[i]} °C`).join("<br>")});</script>
         </div>
     </div>
-    </div>
-    <footer>
+       <footer>
         <p>®2025 Phumlile Mtshali</p>
     </footer>
+    </div>
+ 
 </body>
 </html>
