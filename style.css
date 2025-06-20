@@ -1,14 +1,13 @@
 *{padding: 0;
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;}
+margin: 0;}
 
 @media(max-width:768px){
 .header-container{
 flex-direction: column;
 align-items: center;}}
 
-body{background-color: rgba(0, 0, 0, 0.623);
-}
+body{background-color:#B9B28A;
+font-family: Arial, Helvetica, sans-serif;}
 
 .container{/*border: 1px solid #000000;*/
 margin: auto;
@@ -30,9 +29,9 @@ color: black;
 padding: 20px;
 border-radius: 30px;
 margin: 10px;
-background-color: rgb(169, 197, 141);}
+background-color:#EBE5C2;}
 
-a:hover{background-color: rgba(0, 0, 0, 0.167);
+a:hover{background-color: #B9B28A;
 width: 5px;}
 
 .sections {/*border: 1px solid #000000;*/

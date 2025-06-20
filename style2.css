@@ -1,7 +1,7 @@
 *{padding: 0;
 margin: 0;}
 
-body{background-color: rgba(0, 0, 0, 0.623);
+body{background-color: #B9B28A;
 height: 700px;
 padding: 10px;
 margin: 10px;
@@ -23,7 +23,7 @@ border-radius: 30px;
 margin: 5px;
 background-color: rgb(169, 197, 141);}
 
-a:hover{background-color: rgba(0, 0, 0, 0.167);
+a:hover{background-color: #EBE5C2;
 width: 5px;}
 
 .main{flex: 1;}
