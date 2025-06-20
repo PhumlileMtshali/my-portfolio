@@ -21,9 +21,9 @@ color: black;
 padding: 20px;
 border-radius: 30px;
 margin: 5px;
-background-color: rgb(169, 197, 141);}
+background-color: #EBE5C2}
 
-a:hover{background-color: #EBE5C2;
+a:hover{background-color:#F8F3D9 ;
 width: 5px;}
 
 .main{flex: 1;}
