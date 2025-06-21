@@ -23,18 +23,44 @@ border-radius: 30px;
 margin: 5px;
 background-color: #EBE5C2}
 
-a:hover{background-color:#F8F3D9 ;
-width: 5px;}
+header ul a:hover{background-color:#F8F3D9 ;}
 
 .main{flex: 1;}
 
 
-ul{/*border: 1px solid #000000;*/
+ul{
 padding: 25px;
 list-style-type: none;}
 
 ul a{text-decoration: none;
 color: black;}
+
+.hobbies{padding: 5px;}
+
+.hobbies i{padding: 5px;}
+
+.contacts{
+padding: 5px;}
+
+.contacts i{border: 1px solid #F8F3D9;
+padding: 10px;
+margin: 10px;
+border-radius: 30px;}
+
+.education{
+padding: 5px;}
+
+.education i{
+padding: 5px;
+}
+
+.skills{padding: 5px;}
+
+.skills i{padding: 5px;}
+
+.technical{border: 1px solid #000000;
+display: flex;
+column-gap: 20px;}
 
 footer{margin-bottom: 20px; 
 text-align: center;
@@ -44,5 +70,13 @@ padding:10px 0;}
 display: flex;
 flex-direction: column;
 min-height: 100vh;}
+
+.icons{
+list-style-type: none;
+column-gap: 10px;
+color: #000000;
+padding: 5px;
+}
+
 
 
