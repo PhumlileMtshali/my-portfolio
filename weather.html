@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>7-Day Weather Forecast</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+    <div>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="weather.html">Weather Forecast</a></li>
+        </ul>
+    </header>
+    </div>
+  <main class="weather-app">
+    <h1 id="location">Loading forecast…</h1>
+    <form id="search-form" aria-label="Search another place">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search for a city or place…"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+    <section id="forecast" class="forecast-grid"></section>
+  </main>
+  <script src="weather.js"></script>
+    </div>
+</body>
+</html>

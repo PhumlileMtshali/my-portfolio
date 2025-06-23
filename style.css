@@ -16,7 +16,7 @@ margin: 10px;}
 
 header ul{list-style-type: none;
 display: flex;
-margin-left: 800px;
+margin-left: 600px;
 margin-top: 5px;
 margin-bottom: 20px;}
 
@@ -52,7 +52,7 @@ border-radius: 30px;
 margin: 10px;
 background-color: #EBE5C2;}
 
-p{
+.text p{
 padding: 20px;
 margin-top: 50px;
 font-style: oblique;}
@@ -63,8 +63,6 @@ width: 550px;
 padding: 10px;
 margin: 10px;
 border-radius: 300px;}
-
-
 
 .icons a{color: #000000;}
 

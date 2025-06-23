@@ -1,0 +1,121 @@
+header{/*border: 1px solid #000000;*/
+padding: 20px;
+margin: 10px;}
+
+
+header ul{list-style-type: none;
+display: flex;
+margin-top: 5px;
+margin-bottom: 20px;}
+
+header ul a{text-decoration: none;
+color: black;
+padding: 20px;
+border-radius: 30px;
+margin: 10px;
+background-color:#EBE5C2;}
+
+a:hover{background-color: #F8F3D9;
+width: 5px;}
+
+:root {
+  --bg:#B9B28A;
+  --card-bg: #F8F3D9;
+  --text: #222;
+  --accent: #EBE5C2;
+  --radius: 0.75rem;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.weather-app {/*border: 1px solid #000000;*/
+  width: min(90%, 640px);
+  padding: 20px;
+  margin-top: 100px;
+}
+
+#location {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+#search-form {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.25rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: var(--radius) 0 0 var(--radius);
+  font-size: 1rem;
+  background-color: #F8F3D9;
+}
+
+#search-form button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: var(--accent);
+  color:#000000;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  transition: opacity 0.2s;
+}
+
+#search-form button:hover,
+#search-form button:focus {
+  opacity: 0.9;
+}
+
+.forecast-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.day-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-card .icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.day-card .date {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.day-card .temp {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
