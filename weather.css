@@ -1,26 +1,5 @@
-header{/*border: 1px solid #000000;*/
-padding: 20px;
-margin: 10px;}
-
-
-header ul{list-style-type: none;
-display: flex;
-margin-top: 5px;
-margin-right: 650px;
-margin-bottom: 20px;}
-
-header ul a{text-decoration: none;
-color: black;
-padding: 20px;
-border-radius: 30px;
-margin: 10px;
-background-color:#EBE5C2;}
-
-a:hover{background-color: #F8F3D9;
-width: 5px;}
-
 :root {
-  --bg:#B9B28A;
+  --bg: #B9B28A;
   --card-bg: #F8F3D9;
   --text: #222;
   --accent: #EBE5C2;
@@ -32,10 +11,11 @@ width: 5px;}
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -43,13 +23,38 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  padding: 20px;
 }
 
-.weather-app {/*border: 1px solid #000000;*/
+/* Header Styling */
+header ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: var(--accent);
+  transition: background-color 0.3s ease;
+}
+
+header ul a:hover {
+  background-color: var(--card-bg);
+}
+
+/* Weather App Styling */
+.weather-app {
   width: min(90%, 640px);
   padding: 20px;
-  margin-left: 400px;
-  margin-top: 100px;
+  margin: 100px auto 0 auto; /* Centered */
 }
 
 #location {
@@ -71,14 +76,14 @@ body {
   border-right: none;
   border-radius: var(--radius) 0 0 var(--radius);
   font-size: 1rem;
-  background-color: #F8F3D9;
+  background-color: var(--card-bg);
 }
 
 #search-form button {
   padding: 0.6rem 1rem;
   border: none;
   background: var(--accent);
-  color:#000000;
+  color: #000000;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -90,6 +95,7 @@ body {
   opacity: 0.9;
 }
 
+/* Forecast Grid */
 .forecast-grid {
   display: grid;
   gap: 1rem;
@@ -120,4 +126,86 @@ body {
 .day-card .temp {
   font-size: 0.95rem;
   opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .weather-app {
+    margin: 80px auto 0 auto;
+  }
+
+  header ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: center;
+    padding: 20px;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+
+  header ul a {
+    display: inline-block;
+    padding: 15px ;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: var(--accent);
+    width: auto;
+  }
+
+  .weather-app {
+    width: 100%;
+    margin: 40px auto;
+    padding: 15px;
+  }
+
+  #location {
+    font-size: 1.5rem;
+  }
+
+  #search-form {
+    flex-direction: column;
+  }
+
+  #search-input,
+  #search-form button {
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  #search-input {
+    margin-bottom: 10px;
+    border-radius: var(--radius);
+    border-right: 1px solid #ccc;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  header ul a {
+    font-size: 16px;
+    padding: 18px 30px;
+  }
+
+  #location {
+    font-size: 1.25rem;
+  }
+
+  .day-card {
+    padding: 0.75rem;
+  }
 }
