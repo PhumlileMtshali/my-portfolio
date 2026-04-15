@@ -28,12 +28,6 @@ It serves as a central platform where potential employers and collaborators can 
 
 ---
 
-## 📸 Screenshots
-
-Screenshots of the portfolio interface can be added here to demonstrate the design and layout of the website.
-
----
-
 ## 📚 What I Learned
 
 * Building a complete multi-section website using HTML
